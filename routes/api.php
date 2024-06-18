@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\ItemController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +36,16 @@ Route::group(['prefix' => 'item'], function () {
     Route::post('search' , [ItemController::class , 'search']);
     
 
+});
+Route::group(['prefix' => 'category'], function () {
+
+    Route::get('cat' , [CategoryController::class , 'categories']);
+    
+});
+Route::group(['prefix' => 'subcategory'], function () {
+
+    Route::get('subcat' , [SubCategoryController::class , 'subcategories']);
+    
 });
 
 

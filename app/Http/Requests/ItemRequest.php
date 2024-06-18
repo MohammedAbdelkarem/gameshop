@@ -36,6 +36,7 @@ class ItemRequest extends FormRequest
             'resolution' => 'integer',
             'date' => 'date',
             'author' => 'string',
+            'duration' => 'integer',
             'lang' => 'string',
             'category_id' => 'integer',
             'subcategory_id' => 'integer',

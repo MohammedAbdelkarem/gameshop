@@ -39,6 +39,7 @@ class ItemUpdateRequest extends FormRequest
             'size' => 'required|integer',
             'price' => 'required|integer',
             'rate' => 'integer',
+            'duration' => 'integer',
             'resolution' => 'integer',
             'date' => 'date',
             'author' => 'string',

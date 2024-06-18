@@ -21,6 +21,7 @@ return new class extends Migration
             $table->date('date')->nullable();
             $table->string('author')->nullable();
             $table->string('lang')->nullable();
+            $table->string('duration')->nullable();
             $table->foreignId('category_id')->constrained('categories')->cascadeOnDelete();
             $table->foreignId('subcategory_id')->constrained('sub_categories')->cascadeOnDelete();
             $table->timestamps();

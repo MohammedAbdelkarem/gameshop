@@ -24,6 +24,7 @@ class ItemFactory extends Factory
             'size' => $this->faker->randomNumber(4),
             'price' => $this->faker->randomNumber(4),
             'rate' => $this->faker->randomNumber(1),
+            'duration' => $this->faker->randomNumber(3),
             'resolution' => $this->faker->randomElement(['480' , '720' ,'1080']),
             'date' => $this->faker->date(),
             'author' => $this->faker->text(rand(10, 50)),
